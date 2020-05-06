@@ -10,9 +10,9 @@ $(document).ready(function () {
     $(".modal").toggleClass("is-clipped");
   });
 
-  // $("button.exit-modal").click(function () {
-  //   console.log("modal");
-  //   $(".modal").toggleClass("is-active");
-  //   $(".modal").toggleClass("is-clipped");
-  // });
+  $("button.exit-modal").click(function () {
+    console.log("modal");
+    $(".modal").toggleClass("is-active");
+    $(".modal").toggleClass("is-clipped");
+  });
 });
