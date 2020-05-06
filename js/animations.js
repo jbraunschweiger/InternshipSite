@@ -4,13 +4,13 @@ $(document).ready(function () {
     $(".navbar-menu").toggleClass("is-active");
   });
 
-  $(".signup-button").click(function () {
+  $("#signup-button").click(function () {
     console.log("modal");
     $(".modal").toggleClass("is-active");
     $(".modal").toggleClass("is-clipped");
   });
 
-  $(".exit-modal").click(function () {
+  $("#exit-modal").click(function () {
     console.log("modal");
     $(".modal").toggleClass("is-active");
     $(".modal").toggleClass("is-clipped");
