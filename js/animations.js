@@ -4,7 +4,7 @@ $(document).ready(function () {
     $(".navbar-menu").toggleClass("is-active");
   });
 
-  $(".sign-up-button").click(function () {
+  $(".modal-button").click(function () {
     $(".modal").toggleClass("is-active");
     $(".modal").toggleClass("is-clipped");
   });
