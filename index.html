@@ -17,9 +17,13 @@
     <script src="./js/animations.js"></script>
     <link rel="icon" type="image/png" href="./logos/fav.png" />
   </head>
-  <body>
+  <body class="has-navbar-fixed-top">
     <!-- Header -->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav
+      class="navbar is-fixed-top is-primary"
+      role="navigation"
+      aria-label="main navigation"
+    >
       <div class="navbar-brand">
         <a class="navbar-item" href="http://practicum.us">
           <img
@@ -30,34 +34,35 @@
         </a>
         <a
           role="button"
-          id="hamburgerMenuHeader"
           class="navbar-burger burger"
           aria-label="menu"
           aria-expanded="false"
-          data-target="navbarBasicExample"
+          data-target="navbar-main"
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
+      <div id="navbar-main" class="navbar-menu">
+        <div class="navbar-end">
           <a class="navbar-item">
-            Home
+            <span class="has-text-white">Home</span>
           </a>
 
           <a class="navbar-item">
-            Documentation
+            <span class="has-text-light">Projects</span>
+          </a>
+          <a class="navbar-item">
+            <span class="has-text-light">Mentors</span>
           </a>
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">
-              More
+              <span class="has-text-light">More</span>
             </a>
-
-            <div class="navbar-dropdown">
+            <div class="navbar-dropdown is-right">
               <a class="navbar-item">
-                About
+                About Us
               </a>
               <a class="navbar-item">
                 Jobs
@@ -65,21 +70,12 @@
               <a class="navbar-item">
                 Contact
               </a>
-              <hr class="navbar-divider" />
-              <a class="navbar-item">
-                Report an issue
-              </a>
             </div>
           </div>
-        </div>
-        <div class="navbar-end">
           <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-primary">
-                <strong>Sign up</strong>
-              </a>
-              <a class="button is-light">
-                Log in
+            <div class="buttons sign-up-button">
+              <a class="button is-danger">
+                <strong>Join us</strong>
               </a>
             </div>
           </div>
@@ -102,5 +98,19 @@
         Footer Content
       </div>
     </footer>
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Modal title</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <!-- Content ... -->
+          <p>Sign up Page!</p>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
