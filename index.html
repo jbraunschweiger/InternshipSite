@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Practicum</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css"
@@ -13,8 +14,8 @@
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
     ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./js/animations.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- <script src="./js/animations.js"></script> -->
     <link rel="icon" type="image/png" href="./logos/fav.png" />
   </head>
   <body class="has-navbar-fixed-top">
@@ -47,7 +48,7 @@
       <div id="navbar-main" class="navbar-menu">
         <div class="navbar-end">
           <a class="navbar-item is-active">
-            Home
+            <span>Home</span>
           </a>
           <a class="navbar-item">
             Projects
@@ -80,8 +81,108 @@
     </section>
     <!-- Footer -->
     <footer class="footer">
-      <div class="content has-text-centered">
-        Footer Content
+      <div class="columns">
+        <div class="column has-text-centered">
+          <div>
+            <img
+              src="https://bulma.io/images/bulma-logo.png"
+              width="112"
+              height="28"
+            />
+          </div>
+        </div>
+        <div class="column has-text-centered">
+          <h1 class="title">Practicum</h1>
+          <div class="has-text-left footer-row-element">
+            <span class="subtitle"><a href="">About Us</a></span>
+          </div>
+          <div class="has-text-left footer-row-element">
+            <span class="subtitle"><a href="">Careers</a></span>
+          </div>
+          <div class="has-text-left footer-row-element">
+            <span class="subtitle"><a href="">Privacy Policy</a></span>
+          </div>
+          <div class="has-text-left footer-row-element">
+            <span class="subtitle"><a href="">Terms of Service</a></span>
+          </div>
+        </div>
+        <div class="column has-text-centered">
+          <h1 class="title">Partners</h1>
+          <div class="has-text-left footer-row-element">
+            <span class="subtitle"><a href="">Clients</a></span>
+          </div>
+          <div class="has-text-left footer-row-element">
+            <span class="subtitle"><a href="">Recruiters</a></span>
+          </div>
+          <div class="has-text-left footer-row-element">
+            <span class="subtitle"><a href="">Mentors</a></span>
+          </div>
+        </div>
+        <div class="column has-text-centered">
+          <div>
+            <h1 class="title">Socials</h1>
+            <div class="has-text-left footer-row-element">
+              <span className="is-size-7">
+                <span class="icon has-text-link">
+                  <i class="fas fa-twitter"></i>
+                </span>
+                <span class="subtitle">
+                  <a> Twitter</a>
+                </span>
+              </span>
+            </div>
+            <div class="has-text-left footer-row-element">
+              <span className="is-size-7">
+                <span class="icon has-text-link">
+                  <i class="fas fa-linkedin"></i>
+                </span>
+                <span class="subtitle">
+                  <a> Linkedin</a>
+                </span>
+              </span>
+            </div>
+            <div class="has-text-left footer-row-element">
+              <span className="is-size-7">
+                <span class="icon has-text-link">
+                  <i class="fas fa-github"></i>
+                </span>
+                <span class="subtitle">
+                  <a> YouTube</a>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="column has-text-centered">
+          <div>
+            <h1 class="title">Contact</h1>
+            <div class="has-text-left footer-row-element">
+              <div>
+                <h2 class="subtitle">General Inquiries</h2>
+              </div>
+              <a href="mailto:info@practium.us">info@practicum.us</a>
+            </div>
+            <div class="has-text-left footer-row-element">
+              <div>
+                <h2 class="subtitle">Recruiting Inquiries</h2>
+              </div>
+              <a href="mailto:recruiters@practium.us"
+                >recruiters@practicum.us</a
+              >
+            </div>
+            <div class="has-text-left footer-row-element">
+              <div>
+                <h2 class="subtitle">Press Inquiries</h2>
+              </div>
+              <a href="mailto:press@practium.us">press@practicum.us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="content has-text-centered">
+          ©2020 Practicum. All rights reserved.
+        </div>
       </div>
     </footer>
   </body>
