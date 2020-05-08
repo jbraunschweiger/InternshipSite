@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+$red: #ed5444;
+$grey-dark: #3e414e;
+$washed-green: #7c934c;
+$tangerine: #fa8314;
+$bright-red: #f44336;
+$washed-red: #c98875;
+$white-ter: #f7f7f7;
+$grey-light: #baaaa5;
+
+$primary: $red;
+$secondary: $washed-red;
+$info: $grey-dark;
+$success: $washed-green;
+$warning: $tangerine;
+$danger: $bright-red;
+$light: $white-ter;
+$dark: $grey-dark;
+
+@import "../node_modules/bulma/bulma.sass";
