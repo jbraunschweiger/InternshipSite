@@ -15,17 +15,14 @@ function changeContent(evt, contentName) {
       " selected-active",
       ""
     );
-    tabcontent[i].className = tabcontent[i].className.replace(
-      " has-text-white",
-      ""
-    );
+    $(tabcontent[i]).children("h1").removeClass("has-text-white");
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(contentName).style.display = "block";
   evt.currentTarget.className += " active";
   evt.currentTarget.className += " selected-active";
-  evt.currentTarget.lastChild.className += " has-text-white";
+  $(evt.currentTarget).children("h1").removeClass("has-text-white");
 }
 
 // Navbar drop down JQuery
