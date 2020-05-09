@@ -1,3 +1,4 @@
+// Navbar drop down JQuery
 $(document).ready(function () {
   $(".navbar-burger").click(function () {
     $(".navbar-burger").toggleClass("is-active");
@@ -5,6 +6,7 @@ $(document).ready(function () {
   });
 });
 
+// Main screen typing out effect
 var TxtRotate = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -28,7 +30,7 @@ TxtRotate.prototype.tick = function () {
   this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
 
   var that = this;
-  var delta = 300 - Math.random() * 100;
+  var delta = 200 - Math.random() * 100;
 
   if (this.isDeleting) {
     delta /= 2;
