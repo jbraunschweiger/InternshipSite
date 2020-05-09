@@ -1,6 +1,8 @@
 // Tab manipulation
+// Load up and click the default option
 document.getElementById("defaultOpen").click();
 
+// manipulate the content
 function changeContent(evt, contentName) {
   var i, manipulatedcontent, tabcontent;
 
