@@ -1,6 +1,3 @@
-// Tab manipulation
-document.getElementById("defaultOpen").click();
-
 function changeContent(evt, contentName) {
   var i, manipulatedcontent, tabcontent;
 
@@ -28,6 +25,10 @@ function changeContent(evt, contentName) {
 
 // Navbar drop down JQuery
 $(document).ready(function () {
+  // Tab manipulation
+  document.getElementById("defaultOpen").click();
+
+  // Navbar drop down
   $(".navbar-burger").click(function () {
     $(".navbar-burger").toggleClass("is-active");
     $(".navbar-menu").toggleClass("is-active");
