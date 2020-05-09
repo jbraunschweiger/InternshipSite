@@ -11,9 +11,9 @@
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
     ></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/animations.js"></script>
-    <link rel="icon" type="image/png" href="./logos/fav.png" />
+    <link rel="icon" type="image/png" href=".https://user-images.githubusercontent.com/25086506/81484919-21f39e00-920f-11ea-936e-40b01b3ba296.png" />
   </head>
   <body class="has-navbar-fixed-top">
     <!-- Header -->
@@ -106,7 +106,7 @@
         <div class="column">
           <div
             class="tab-content"
-            id="defaultOpen"
+
             onclick="changeContent(event, 'apply')"
           >
             <span class="icon is-size-3 has-text-warning"
@@ -116,7 +116,7 @@
           </div>
         </div>
         <div class="column">
-          <div class="tab-content" onclick="changeContent(event, 'team')">
+          <div class="tab-content" id="defaultOpen" onclick="changeContent(event, 'team')">
             <span class="icon is-size-3 has-text-warning"
               ><i class="fas fa-code-branch"></i
             ></span>
@@ -142,8 +142,9 @@
       </div>
       <!-- Different content -->
       <div class="container">
-        <!-- <div id="apply" class="manipulated-content">
-          <div class="columns">
+        <!-- Apply Code -->
+        <div id="apply" class="manipulated-content">
+          <div class="columns is-vcentered">
             <div class="column">
               <img src="./cartoons/team.svg" alt="team" />
             </div>
@@ -241,73 +242,79 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
+        <!-- Team Code -->
         <div id="team" class="manipulated-content">
-          <div class="columns">
+          <div class="columns is-vcentered">
             <div class="column">
               <img src="./cartoons/joining.svg" alt="joining" />
             </div>
             <div class="column">
               <h2 class="subtitle has-text-primary is-size-3 has-text-centered">
-                Be Part of a Driven Team
+                Meet your New Teammates
               </h2>
               <p>
-                Each project will be structured to give you industry standard
-                experience and give you a leg up on the competition.
+                Teams are structured so that everyone can work on what makes them happy.
               </p>
+              <p style="margin-top:10px;">Members can work <b>part-time</b> or <b>full-time</b>, and teams will be balanced.</p>
               <div
-                class="columns is-3"
+                class="columns is-3 is-multiline is-mobile"
                 style="margin-bottom: 10px; margin-top: 10px;"
               >
-                <div class="column has-text-left">
+                <div class="column is-half has-text-left">
                   <div class="box">
                     <h2 class="subtitle is-size-5" style="color: #c98875;">
-                      Software Engineers:
+                      <b>Software Engineers</b> (3-6):
                     </h2>
                     <p>
-                      The team is built from the ground up to support our
-                      engineers. An average project will have two front-end and
-                      two back-end developers. Every team will have a lead
+                      The team is built from the ground up to support our  engineers.
+                      Each project has both front-end and back-end functionality that will need to be built out. Every team has a lead
                       engineer, who is the most familiar with the technologies
                       being used and will help scope and plan out the project.
-                      The other developers will have complete agency over
+                      Developers have complete agency over
                       features and will work together to complete a unified
                       product.
                     </p>
                   </div>
+                </div>
+                <div class="column is-half has-text-left">
                   <div class="box">
                     <h2 class="subtitle is-size-5" style="color: #c98875;">
-                      UI/UX Designers:
+                      <b>Product Managers</b> (1-2):
                     </h2>
                     <p>
-                      Every team will have one designer who will have complete
+                      The product managers are the glue that keeps the team
+                      efficient. The product manager is in constant
+                      communication with the team, mentors, stakeholders, and
+                      Practicum advisors to ensure that the product is the best
+                      it can be.  We expect our PMs to understand how to code and
+                      help lead engineer scope and scale the product.
+                    </p>
+                  </div>
+                </div>
+                <div class="column is-half has-text-left">
+                  <div class="box">
+                    <h2 class="subtitle is-size-5" style="color: #c98875;">
+                      <b>UI/UX Designers</b> (1-2):
+                    </h2>
+                    <p>
+                      Our designers are the creative genius that make projects come together. They have
                       control over the creative direction of the product. They
-                      will work with stakeholders to make sure that they are
+                      work with stakeholders and the PM to make sure that they are
                       following the client’s vision and work closely with our
-                      engineers to ensure that the designs are feasible.
+                      engineers to ensure that designs are feasible.
                       Designers are expected to get their hands dirty, creating
                       prototypes and wireframes.
                     </p>
                   </div>
                 </div>
-                <div class="column has-text-left">
+
+                <div class="column is-half has-text-left">
                   <div class="box">
                     <h2 class="subtitle is-size-5" style="color: #c98875;">
-                      Product Managers:
+                      <b>Data Scientists</b> (1-4):
                     </h2>
-                    <p>
-                      The product managers are the glue that keeps the team
-                      cohesive. The product manager will have to be in constant
-                      communication with the team, mentors, stakeholders, and
-                      Practicum advisors to ensure that the product is the best
-                      it can be. We also expect our PMs to know how to code and
-                      can help the lead engineer scope and scale the product.
-                    </p>
-                  </div>
-                  <div class="box">
-                    <h2 class="subtitle is-size-5" style="color: #c98875;">
-                      Data Scientists:
-                    </h2>
+                    <p></p>
                   </div>
                 </div>
               </div>
@@ -329,7 +336,7 @@
           <div>
             <a href="index.html">
               <img
-                src="https://user-images.githubusercontent.com/25086506/81460444-09ca4300-916b-11ea-9d98-01fd8d4aa400.png"
+                src="https://user-images.githubusercontent.com/25086506/81484918-2029da80-920f-11ea-8a35-cc9332dacd43.png"
                 width="112"
                 height="28"
                 alt="Practicum Logo"
