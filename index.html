@@ -11,7 +11,7 @@
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
     ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <script src="./js/animations.js"></script>
     <link rel="icon" type="image/png" href="./logos/fav.png" />
   </head>
@@ -65,7 +65,7 @@
     </nav>
     <!-- Body -->
     <!-- Hero -->
-    <section class="hero is-info is-large is-bold">
+    <section class="hero is-info is-medium is-bold">
       <div class="hero-body">
         <div class="container">
           <h1 class="title is-size-1">
@@ -96,6 +96,56 @@
             Apply Now
           </a>
         </div>
+      </div>
+    </section>
+    <!-- How it works panel -->
+    <section class="section has-text-centered">
+      <h1 class="title">What is Practicum?</h1>
+      <div class="columns tab">
+        <div class="column">
+          <div class="tab-content" onclick="changeContent(event, 'apply')">
+            <span class="icon is-size-3 has-text-warning"
+              ><i class="fas fa-clipboard-check"></i
+            ></span>
+            <h1 class="subtitle is-size-5">Apply to the Program</h1>
+          </div>
+        </div>
+        <div class="column">
+          <div class="tab-content" onclick="changeContent(event, 'team')">
+            <span class="icon is-size-3 has-text-warning"
+              ><i class="fas fa-code-branch"></i
+            ></span>
+            <h1 class="subtitle is-size-5">Join your new Team</h1>
+          </div>
+        </div>
+        <div class="column">
+          <div class="tab-content" onclick="changeContent(event, 'mentor')">
+            <span class="icon is-size-3 has-text-warning"
+              ><i class="fas fa-chalkboard-teacher"></i
+            ></span>
+            <h1 class="subtitle is-size-5">Meet your Mentor</h1>
+          </div>
+        </div>
+        <div class="column">
+          <div class="tab-content" onclick="changeContent(event, 'project')">
+            <span class="icon is-size-3 has-text-warning"
+              ><i class="fas fa-code"></i
+            ></span>
+            <h1 class="subtitle is-size-5">Build your Project</h1>
+          </div>
+        </div>
+      </div>
+      <div id="apply" class="manipulated-content" id="defaultOpen">
+        <h3>Apply to the program</h3>
+      </div>
+      <div id="team" class="manipulated-content">
+        <h3>join a team</h3>
+      </div>
+      <div id="mentor" class="manipulated-content">
+        <h3>heres your mentor</h3>
+      </div>
+      <div id="project" class="manipulated-content">
+        <h3>build project</h3>
       </div>
     </section>
     <!-- Footer -->

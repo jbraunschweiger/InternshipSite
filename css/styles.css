@@ -17,6 +17,36 @@
   color: #2867b2;
 }
 
-.txt-rotate {
-  color: $primary;
+.tab-content {
+  border-style: solid;
+  border-color: #3e414e;
+  border-radius: 8px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: inherit;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab-content:hover {
+  background-color: grey;
+}
+
+.tab-content:active {
+  background-color: #3e414e;
+}
+
+.manipulated-content {
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

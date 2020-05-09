@@ -1,3 +1,31 @@
+// Tab manipulation
+document.getElementById("defaultOpen").click();
+
+function changeContent(evt, contentName) {
+  var i, manipulatedcontent, tabcontent;
+
+  // Get all elements with class="manipulated-content" and hide them
+  manipulatedcontent = document.getElementsByClassName("manipulated-content");
+  for (i = 0; i < manipulated - content.length; i++) {
+    manipulated - content[i].style.display = "none";
+  }
+
+  // Get all elements with class="tabcontent" and remove the class "active"
+  tabcontent = document.getElementsByClassName("tab-content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].className = tabcontent[i].className.replace(" active", "");
+    tabcontent[i].className = tabcontent[i].className.replace(
+      " has-text-white",
+      ""
+    );
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(contentName).style.display = "block";
+  evt.currentTarget.className += " active";
+  evt.currentTarget.className += " has-text-white";
+}
+
 // Navbar drop down JQuery
 $(document).ready(function () {
   $(".navbar-burger").click(function () {
@@ -59,9 +87,8 @@ window.onload = function () {
       new TxtRotate(elements[i], JSON.parse(toRotate), period);
     }
   }
-  // INJECT CSS
   var css = document.createElement("style");
   css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #f7f7f7 }";
   document.body.appendChild(css);
 };
