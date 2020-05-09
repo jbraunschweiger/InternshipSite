@@ -20,7 +20,7 @@ function changeContent(evt, contentName) {
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(contentName).style.display = "block";
   evt.currentTarget.className += " active";
-  evt.currentTarget.className += " has-text-white";
+  evt.currentTarget.lastChild.className += " has-text-white";
 }
 
 // Navbar drop down JQuery

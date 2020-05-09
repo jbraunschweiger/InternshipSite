@@ -37,6 +37,12 @@
 .tab-content:active {
   background-color: #3e414e;
 }
+.active {
+  background-color: #3e414e;
+}
+
+.selected-active {
+}
 
 .manipulated-content {
   animation: fadeEffect 1s;
