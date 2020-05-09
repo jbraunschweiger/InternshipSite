@@ -22,7 +22,7 @@ function changeContent(evt, contentName) {
   document.getElementById(contentName).style.display = "block";
   evt.currentTarget.className += " active";
   evt.currentTarget.className += " selected-active";
-  $(evt.currentTarget).children("h1").removeClass("has-text-white");
+  $(evt.currentTarget).children("h1").addClass("has-text-white");
 }
 
 // Navbar drop down JQuery
