@@ -103,7 +103,11 @@
       <h1 class="title">What is Practicum?</h1>
       <div class="columns tab">
         <div class="column">
-          <div class="tab-content" onclick="changeContent(event, 'apply')">
+          <div
+            class="tab-content"
+            id="defaultOpen"
+            onclick="changeContent(event, 'apply')"
+          >
             <span class="icon is-size-3 has-text-warning"
               ><i class="fas fa-clipboard-check"></i
             ></span>
@@ -135,7 +139,7 @@
           </div>
         </div>
       </div>
-      <div id="apply" class="manipulated-content" id="defaultOpen">
+      <div id="apply" class="manipulated-content">
         <h3>Apply to the program</h3>
       </div>
       <div id="team" class="manipulated-content">
@@ -149,7 +153,7 @@
       </div>
       <script>
         // Select the first tab
-        document.getElementById("defaultOpen").click();
+        // document.getElementById("defaultOpen").click();
       </script>
     </section>
     <!-- Footer -->

@@ -1,4 +1,6 @@
 // Tab manipulation
+document.getElementById("defaultOpen").click();
+
 function changeContent(evt, contentName) {
   var i, manipulatedcontent, tabcontent;
 
