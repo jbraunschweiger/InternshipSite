@@ -8,8 +8,8 @@ function changeContent(evt, contentName) {
 
   // Get all elements with class="manipulated-content" and hide them
   manipulatedcontent = document.getElementsByClassName("manipulated-content");
-  for (i = 0; i < manipulatedcontent - content.length; i++) {
-    manipulatedcontent - content[i].style.display = "none";
+  for (i = 0; i < manipulatedcontent.length; i++) {
+    manipulatedcontent[i].style.display = "none";
   }
 
   // Get all elements with class="tabcontent" and remove the class "active"
