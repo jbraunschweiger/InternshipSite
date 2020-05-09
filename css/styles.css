@@ -37,11 +37,9 @@
 .tab-content:active {
   background-color: #3e414e;
 }
-.active {
-  background-color: #3e414e;
-}
 
 .selected-active {
+  background-color: #3e414e;
 }
 
 .manipulated-content {

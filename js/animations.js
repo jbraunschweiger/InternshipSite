@@ -12,6 +12,10 @@ function changeContent(evt, contentName) {
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].className = tabcontent[i].className.replace(" active", "");
     tabcontent[i].className = tabcontent[i].className.replace(
+      " selected-active",
+      ""
+    );
+    tabcontent[i].className = tabcontent[i].className.replace(
       " has-text-white",
       ""
     );
@@ -20,6 +24,7 @@ function changeContent(evt, contentName) {
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(contentName).style.display = "block";
   evt.currentTarget.className += " active";
+  evt.currentTarget.className += " selected-active";
   evt.currentTarget.lastChild.className += " has-text-white";
 }
 
