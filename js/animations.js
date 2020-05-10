@@ -26,19 +26,25 @@ function changeContent(evt, contentName) {
 }
 
 // Navbar drop down JQuery
-$(document).ready(function () {
+$(document).ready(function() {
   // Tab manipulation
   document.getElementById("defaultOpen").click();
 
   // Navbar drop down
-  $(".navbar-burger").click(function () {
+  $(".navbar-burger").click(function() {
     $(".navbar-burger").toggleClass("is-active");
     $(".navbar-menu").toggleClass("is-active");
   });
+
+  // Switch the timeline if mobile
+  $(window).resize(function() {
+    timeLineResponsive();
+  });
+  timeLineResponsive();
 });
 
 // Main screen typing out effect
-var TxtRotate = function (el, toRotate, period) {
+var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
@@ -48,7 +54,7 @@ var TxtRotate = function (el, toRotate, period) {
   this.isDeleting = false;
 };
 
-TxtRotate.prototype.tick = function () {
+TxtRotate.prototype.tick = function() {
   var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
 
@@ -76,12 +82,12 @@ TxtRotate.prototype.tick = function () {
     delta = 500;
   }
 
-  setTimeout(function () {
+  setTimeout(function() {
     that.tick();
   }, delta);
 };
 
-window.onload = function () {
+window.onload = function() {
   var elements = document.getElementsByClassName("txt-rotate");
   for (var i = 0; i < elements.length; i++) {
     var toRotate = elements[i].getAttribute("data-rotate");
@@ -94,4 +100,14 @@ window.onload = function () {
   css.type = "text/css";
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #f7f7f7 }";
   document.body.appendChild(css);
+};
+
+
+var timeLineResponsive = function() {
+  var ww = document.body.clientWidth;
+  if (ww < 400) {
+    $('.timeline').removeClass('is-rtl');
+  } else if (ww >= 401) {
+    $('.timeline').addClass('is-rtl');
+  };
 };
