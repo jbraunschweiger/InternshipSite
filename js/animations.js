@@ -105,9 +105,11 @@ window.onload = function() {
 
 var timeLineResponsive = function() {
   var ww = document.body.clientWidth;
-  if (ww < 400) {
+  if (ww > 1200) {
     $('.timeline').removeClass('is-rtl');
-  } else if (ww >= 401) {
+    $('.timeline').addClass('is-centered');
+  } else if (ww <= 1200) {
     $('.timeline').addClass('is-rtl');
+    $('.timeline').removeClass('is-centered');
   };
 };
