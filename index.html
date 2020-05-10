@@ -87,7 +87,7 @@
     <!-- Selection Tabs -->
     <div class="columns tab">
       <div class="column">
-        <div class="tab-content" id="defaultOpen" onclick="changeContent(event, 'apply')">
+        <div class="tab-content" onclick="changeContent(event, 'apply')">
           <span class="icon is-size-3 has-text-warning"><i class="fas fa-clipboard-check"></i></span>
           <h1 class="subtitle is-size-5">Apply to the Program</h1>
         </div>
@@ -99,7 +99,7 @@
         </div>
       </div>
       <div class="column">
-        <div class="tab-content" onclick="changeContent(event, 'mentor')">
+        <div class="tab-content" id="defaultOpen" onclick="changeContent(event, 'mentor')">
           <span class="icon is-size-3 has-text-warning"><i class="fas fa-chalkboard-teacher"></i></span>
           <h1 class="subtitle is-size-5">Meet your Mentor</h1>
         </div>
@@ -335,7 +335,94 @@
         </div>
       </div>
       <div id="mentor" class="manipulated-content">
-        <h3>heres your mentor</h3>
+        <div class="container has-text-centered`">
+          <h2 class="subtitle has-text-primary is-size-3 has-text-centered">
+            Learn from Industry Professionals
+          </h2>
+          <p>
+            Each team is given an mentor to help <b>guide</b> them through the project and to learn more about tech.
+          </p>
+          <p style="margin-top:10px;">The mentors are here for you to bounce ideas off of, be that <b>recruiting tips</b> or industry practices</p>
+        </div>
+        <div class="columns is-vcentered">
+          <div class="column">
+            <div class="columns is-3 is-multiline is-mobile" style="margin-bottom: 10px; margin-top: 10px;">
+              <div class="column is-half has-text-left">
+                <div class="box">
+                  <h2 class="subtitle is-size-5" style="color: #c98875;">
+                    <b>Software Engineers</b> (3-6):
+                  </h2>
+                  <p>
+                    The team is built from the <b>ground up</b> to support our engineers.
+                    Each project has both front-end and back-end functionality that will need to be built out. Every team has a lead
+                    engineer, who is the most familiar with the technologies
+                    being used and will help scope and plan out the project.
+                    Developers have <b>complete agency</b> over
+                    features and will work together to complete a unified
+                    product.
+                  </p>
+                </div>
+              </div>
+              <div class="column is-half has-text-left">
+                <div class="box">
+                  <h2 class="subtitle is-size-5" style="color: #c98875;">
+                    <b>Product Managers</b> (1-2):
+                  </h2>
+                  <p>
+                    The product managers are the glue that keeps the team
+                    efficient. The product manager is in <b>constant
+                      communication</b> with the team, mentors, stakeholders, and
+                    Practicum advisors to ensure that <b>the product is the best</b>
+                    it can be. We expect our PMs to understand how to code and
+                    help lead engineer scope and scale the product.
+                  </p>
+                </div>
+              </div>
+              <div class="column is-half has-text-left">
+                <div class="box">
+                  <h2 class="subtitle is-size-5" style="color: #c98875;">
+                    <b>UI/UX Designers</b> (1-2):
+                  </h2>
+                  <p>
+                    Our designers are the <b>creative genius</b> that make projects come together. They have
+                    control over the creative direction of the product. They
+                    work with stakeholders and the PM to make sure that they are
+                    following the client’s vision and work closely with our
+                    engineers to ensure that <b>designs are feasible</b>.
+                    Designers are expected to get their hands dirty, creating
+                    prototypes and wireframes.
+                  </p>
+                </div>
+              </div>
+              <div class="column is-half has-text-left">
+                <div class="box">
+                  <h2 class="subtitle is-size-5" style="color: #c98875;">
+                    <b>Data Scientists</b> (1-4):
+                  </h2>
+                  <p>
+                    Data scientists have the most flexible role, and what they
+                    do will depend heavily on the project that is being worked on.
+                    On certain projects, the data scientists will <b>develop models</b>
+                    to help create a smarter product and work with the back-end
+                    engineers to create algorithms. Data scientists may act as
+                    analysts on projects, charged with <b>analyizing user testing</b> and
+                    ensuring that the Product Manager is well informed.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <img src="./cartoons/joining.svg" alt="joining" />
+          </div>
+        </div>
+        <div class="container">
+          <div class="has-text-centered">
+            <a href="join.html" class="button is-medium is-primary">
+              <strong>Find your team</strong>
+            </a>
+          </div>
+        </div>
       </div>
       <div id="project" class="manipulated-content">
         <h3>build project</h3>
