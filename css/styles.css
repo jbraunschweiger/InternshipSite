@@ -1,6 +1,7 @@
 .footer-row-element {
   margin-top: 10px;
 }
+
 .grey-text {
   color: #3e414e;
 }
@@ -41,6 +42,7 @@
 .selected-active {
   background-color: #3e414e;
 }
+
 .selected-active:hover {
   background-color: #3e414e;
 }
@@ -53,6 +55,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -60,4 +63,8 @@
 
 .text-secondary-color {
   color: #c98875;
+}
+
+.is-horizontal-center {
+  justify-content: center;
 }

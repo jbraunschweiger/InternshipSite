@@ -87,7 +87,7 @@
     <!-- Selection Tabs -->
     <div class="columns tab">
       <div class="column">
-        <div class="tab-content" onclick="changeContent(event, 'apply')">
+        <div class="tab-content" id="defaultOpen" onclick="changeContent(event, 'apply')">
           <span class="icon is-size-3 has-text-warning"><i class="fas fa-clipboard-check"></i></span>
           <h1 class="subtitle is-size-5">Apply to the Program</h1>
         </div>
@@ -99,7 +99,7 @@
         </div>
       </div>
       <div class="column">
-        <div class="tab-content" id="defaultOpen" onclick="changeContent(event, 'mentor')">
+        <div class="tab-content" onclick="changeContent(event, 'mentor')">
           <span class="icon is-size-3 has-text-warning"><i class="fas fa-chalkboard-teacher"></i></span>
           <h1 class="subtitle is-size-5">Meet your Mentor</h1>
         </div>
@@ -181,7 +181,7 @@
                 <header class="timeline-header">
                   <span class="tag is-primary is-medium">Fall</span>
                 </header>
-                <div class="timeline-item is-primary">
+                <div class="timeline-item is-success">
                   <div class="timeline-marker is-success is-icon">
                     <i class="fa fa-check"></i>
                   </div>
@@ -454,6 +454,51 @@
       </div>
       <div id="project" class="manipulated-content">
         <h3>build project</h3>
+      </div>
+    </div>
+  </section>
+  <!-- Join Students Hero -->
+  <section class="hero is-danger is-bold">
+    <div class="hero-body">
+      <div class="container has-text-centered" style="margin-bottom:40px">
+        <h2 class="title has-text-black">Work with Students From</h2>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="is-flex is-horizontal-center">
+            <figure class="image is-128x128">
+              <img src="./schools/cal.png" alt="Berkley">
+            </figure>
+          </div>
+        </div>
+        <div class="column">
+          <div class="is-flex is-horizontal-center">
+            <figure class="image is-128x128">
+              <img src="./schools/wustllogo.svg" alt="WashU">
+            </figure>
+          </div>
+        </div>
+        <div class="column">
+          <div class="is-flex is-horizontal-center">
+            <figure class="image is-128x128">
+              <img src="./schools/harvard.png" alt="Harvard">
+            </figure>
+          </div>
+        </div>
+        <div class="column">
+          <div class="is-flex is-horizontal-center">
+            <figure class="image has-text-centered is-128x128">
+              <img src="./schools/michigan.png" alt="Michigan">
+            </figure>
+          </div>
+        </div>
+        <div class="column">
+          <div class="is-flex is-horizontal-center">
+            <figure class="image has-text-centered is-128x128">
+              <img src="./schools/georgetown.png" alt="Georgetown">
+            </figure>
+          </div>
+        </div>
       </div>
     </div>
   </section>
