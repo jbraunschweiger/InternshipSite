@@ -93,7 +93,7 @@
   <section class="section has-text-centered">
     <h1 class="title">What is Practicum?</h1>
     <!-- Selection Tabs -->
-    <div class="columns tab">
+    <div class="columns tab" id="mainpage-content">
       <div class="column">
         <div class="tab-content" id="apply-button" onclick="changeContent('apply')">
           <span class="icon is-size-3 has-text-warning"><i class="fas fa-clipboard-check"></i></span>
@@ -509,10 +509,10 @@
         <!-- <a id="previous-button" onclick="backPage()" class="pagination-previous">Previous</a>
         <a id="next-button" onclick="nextPage()" class="pagination-next">Next page</a> -->
         <ul class="pagination-list">
-          <li><a class="pagination-link is-current" id="apply-page" onclick="changeContent('apply')" aria-label="apply">Apply</a></li>
-          <li><a class="pagination-link" id="team-page" onclick="changeContent('team')" aria-label="team">Teams</a></li>
-          <li><a class="pagination-link" id="mentor-page" onclick="changeContent('mentor')" aria-label="mentor" aria-current="page">Mentors</a></li>
-          <li><a class="pagination-link" id="project-page" onclick="changeContent('project')" aria-label="project">Project</a></li>
+          <li><a href="#mainpage-content" class="pagination-link is-current" id="apply-page" onclick="changeContent('apply')" aria-label="apply">Apply</a></li>
+          <li><a href="#mainpage-content" class="pagination-link" id="team-page" onclick="changeContent('team')" aria-label="team">Teams</a></li>
+          <li><a href="#mainpage-content" class="pagination-link" id="mentor-page" onclick="changeContent('mentor')" aria-label="mentor" aria-current="page">Mentors</a></li>
+          <li><a href="#mainpage-content" class="pagination-link" id="project-page" onclick="changeContent('project')" aria-label="project">Project</a></li>
         </ul>
       </nav>
     </div>
