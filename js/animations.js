@@ -1,4 +1,6 @@
-function changeContent(contentName, inputType) {
+var currentContent;
+
+function changeContent(contentName) {
   var i, manipulatedcontent, tabcontent;
 
   // Get all elements with class="manipulated-content" and hide them
@@ -29,8 +31,33 @@ function changeContent(contentName, inputType) {
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(contentName).style.display = "block";
   $(buttonName).addClass("active");
-  $(pageName).addClass("selected-active");
+  $(buttonName).addClass("selected-active");
   $(buttonName).children("h1").addClass("has-text-white");
+
+  $(pageName).addClass("is-current");
+
+  // Settings for previous and next
+  currentContent = contentName;
+}
+
+function nextPage() {
+  if (currentContent === "apply") {
+    changeContent('team');
+  } else if (currentContent === "team") {
+    changeContent('mentor');
+  } else if (currentContent === "mentor") {
+    changeContent('project');
+  }
+}
+
+function backPage() {
+  if (currentContent === "team") {
+    changeContent('apply');
+  } else if (currentContent === "mentor") {
+    changeContent('team');
+  } else if (currentContent === "project") {
+    changeContent('mentor');
+  }
 }
 
 // Navbar drop down JQuery
