@@ -59,6 +59,7 @@
     </div>
   </nav>
   <!-- Body -->
+  <!-- Hero -->
   <section class="hero is-medium is-info is-bold has-background">
     <img alt="Mentoring Image" class="hero-background is-transparent" src="./background-images/mentor.jpg" />
     <div class="hero-body">
@@ -84,6 +85,60 @@
         </a>
       </div>
     </div>
+  </section>
+  <!-- How it works section -->
+  <section class="section has-text-centered">
+    <h1 class="title">What is a Practicum Mentor?</h1>
+    <!-- Selection Tabs -->
+    <div class="columns tab" id="mainpage-content">
+      <div class="column">
+        <div class="tab-content default-tab" id="mentor-button" onclick="changeContent('mentor')">
+          <span class="icon is-size-3 has-text-warning"><i class="fas fa-users"></i></span>
+          <h1 class="subtitle is-size-5">Coach your Team</h1>
+        </div>
+      </div>
+      <div class="column">
+        <div class="tab-content" id="lecture-button" onclick="changeContent('lecture')">
+          <span class="icon is-size-3 has-text-warning"><i class="fas fa-code-branch"></i></span>
+          <h1 class="subtitle is-size-5">Give a Lecture</h1>
+        </div>
+      </div>
+      <div class="column">
+        <div class="tab-content" id="questions-button" onclick="changeContent('questions')">
+          <span class="icon is-size-3 has-text-warning"><i class="fas fa-code-branch"></i></span>
+          <h1 class="subtitle is-size-5">Answer Questions</h1>
+        </div>
+      </div>
+      <div class="column">
+        <div class="tab-content" id="network-button" onclick="changeContent('network')">
+          <span class="icon is-size-3 has-text-warning"><i class="fas fa-code-branch"></i></span>
+          <h1 class="subtitle is-size-5">Join the Network</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Manipulated Content -->
+    <div class="container">
+      <div class="manipulated-content" id="mentor">mentor</div>
+      <div class="manipulated-content" id="lecture">lecture</div>
+      <div class="manipulated-content" id="questions">questions</div>
+      <div class="manipulated-content" id="network">network</div>
+    </div>
+
+    <!-- Paging buttons -->
+    <div class="container" style="margin-top:30px;">
+      <nav class="pagination is-medium is-centered" role="navigation" aria-label="pagination">
+        <!-- <a id="previous-button" onclick="backPage()" class="pagination-previous">Previous</a>
+        <a id="next-button" onclick="nextPage()" class="pagination-next">Next page</a> -->
+        <ul class="pagination-list">
+          <li><a href="#mainpage-content" class="pagination-link is-current" id="mentor-page" onclick="changeContent('mentor')" aria-label="mentor">Mentor</a></li>
+          <li><a href="#mainpage-content" class="pagination-link" id="lecture-page" onclick="changeContent('lecture')" aria-label="lecture">Lecture</a></li>
+          <li><a href="#mainpage-content" class="pagination-link" id="questions-page" onclick="changeContent('questions')" aria-label="questions" aria-current="page">Questions</a></li>
+          <li><a href="#mainpage-content" class="pagination-link" id="network-page" onclick="changeContent('network')" aria-label="network">Network</a></li>
+        </ul>
+      </nav>
+    </div>
+
   </section>
   <!-- Footer -->
   <footer class="footer">

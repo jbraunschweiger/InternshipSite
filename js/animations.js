@@ -63,7 +63,7 @@ function backPage() {
 // Navbar drop down JQuery
 $(document).ready(function() {
   // Tab manipulation
-  document.getElementById("apply-button").click();
+  document.getElementsByClassName('default-tab')[0].click();
 
   // Navbar drop down
   $(".navbar-burger").click(function() {
