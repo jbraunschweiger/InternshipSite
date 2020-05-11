@@ -1,4 +1,4 @@
-function changeContent(evt, contentName) {
+function changeContent(contentName, inputType) {
   var i, manipulatedcontent, tabcontent;
 
   // Get all elements with class="manipulated-content" and hide them
@@ -18,17 +18,25 @@ function changeContent(evt, contentName) {
     $(tabcontent[i]).children("h1").removeClass("has-text-white");
   }
 
+  //For pages
+  pages = document.getElementsByClassName("pagination-link");
+  for (i = 0; i < pages.length; i++) {
+    pages[i].className = pages[i].className.replace(" is-current", "");
+  }
+
+  let buttonName = "#" + contentName + "-button";
+  let pageName = "#" + contentName + "-page";
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(contentName).style.display = "block";
-  evt.currentTarget.className += " active";
-  evt.currentTarget.className += " selected-active";
-  $(evt.currentTarget).children("h1").addClass("has-text-white");
+  $(buttonName).addClass("active");
+  $(pageName).addClass("selected-active");
+  $(buttonName).children("h1").addClass("has-text-white");
 }
 
 // Navbar drop down JQuery
 $(document).ready(function() {
   // Tab manipulation
-  document.getElementById("defaultOpen").click();
+  document.getElementById("apply-button").click();
 
   // Navbar drop down
   $(".navbar-burger").click(function() {
