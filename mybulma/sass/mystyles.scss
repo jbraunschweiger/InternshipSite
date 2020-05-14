@@ -15,5 +15,8 @@ $warning: $orange;
 $danger: $washed-red;
 $light: $white-ter;
 $dark: $grey-dark;
+$pagination-current-background-color: $info;
+$pagination-current-border-color: $info;
+$pagination-focus-border-color: $info;
 @import "../node_modules/bulma/bulma.sass";
 @import "../node_modules/bulma-timeline/dist/css/bulma-timeline.sass";
