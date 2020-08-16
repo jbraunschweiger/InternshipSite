@@ -91,10 +91,6 @@
   opacity: 0.2;
 }
 
-.button:hover, .button.is-hovered {
-  /* color: white !important; */
-}
-
 .showcase-button {
   color: #ed5444 !important;
   background-color: white !important;
